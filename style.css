@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+header{
+    /* min-width: 100hv; */
+  width: 100%;
+}
+
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav img{
+    width: 150px;
+    cursor: pointer;
+}
+
+
+.nav-link{
+    flex: 1;
+    text-align: right;
+   
+}
+
+.nav-link ul li{
+
+    list-style:none;
+    display:inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+
+.nav-link ul li a {
+
+    color: #212222;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.text-box{
+  
+    width: 10%;
+   position: relative;
+ 
+   font-size: 150px;
+  top: 10%;
+  left: 8%;
+  transform: translate(-50% -50%);
+  font-family: 'DM Sans', sans-serif;
+  text-align: center; 
+}
+.text1{
+    position: relative;
+   z-index: -2;
+}
+.text2{
+    position: relative;
+   z-index: -2;
+}
+
+h1{
+    color: #212222;
+}
+
+.text-ipsum{
+    margin-left: 330px;
+    position: relative;
+   
+}
+
+.mug1 img{
+    height: 700px;
+ width: 700px;
+ animation: float 6s ease-in-out infinite;
+
+ 
+}
+@keyframes float {
+  
+    0% {
+  
+      transform: translatey(0px);
+      z-index: -1;
+      position: relative;
+    }
+    50% {
+    
+      transform: translatey(-25px);
+     position: relative;
+      
+    }
+    100% {
+  
+      transform: translatey(0px);
+      z-index: -1;
+      position: relative;
+     
+    }
+    
+  }
+.mug1{
+    margin-left: 500px;
+    
+    margin-top: -824px; 
+  
+ 
+}
+
+
+hr{
+ 
+    outline: none;
+    width: 1320px;
+    background-color: #212222;
+    position: relative;
+    z-index: -2;
+    display: block;
+}
+nav .burger{
+    display: none;
+}
+
+.infotext{
+    display:inline-block;
+    margin-left: 50%;
+    margin-top: 100px;
+}
+
+.point{
+    color:#FB088C;
+    font-size: 4vw;
+    
+}
+
+
+
+
+
+
+/* mobile  */
+@media(max-width:700px){
+
+   .nav-link  ul li{
+   display: block;
+   }
+    .nav-link{
+    position: absolute;
+    background-color: transparent;
+     height: 100vh;
+    width: 100px; 
+    top: 0;
+    right: 0;  
+    text-align: right;
+    z-index: 2;
+   }
+   .nav-link .li{
+   
+    width: 0px;
+    overflow: hidden;
+   }
+   .nav-link .active{
+    width: 65px;
+    background-color: white;
+   }
+    .text-box{
+    
+     width: 10%;
+     position: relative;
+     font-size: 13vh;
+     top: 10%;
+     left: 8%;
+     transform: translate(-50% -50%);
+     font-family: 'DM Sans', sans-serif;
+     text-align: center;
+     width: 310px;
+     height: 500px;
+     }
+     .text-ipsum{
+        margin-left: -140px;
+        position: relative;
+    }
+   
+     .mug1{
+        margin-left: 50px;
+        margin-top: -410px; 
+        height: 100px;
+        width: 100px;
+    }
+    .mug1 img{
+        
+        height: 300px;
+        width: auto;
+    }
+    hr{
+        outline: none;
+        width: 420px;
+        background-color: #212222;
+        position: relative;
+    }
+    .infotext {
+        margin-top: 100px;
+            display:inline-block;
+            margin-left: 50px;
+        
+    }
+    .infotext p{
+       font-size: 6vw;
+        
+    }
+/* MENU ICON MOBILE*/
+    nav .burger{
+    display: block;
+      }
+    
+    .burger {
+    display: flex;
+    outline: none;
+    height: 30px;
+    width: 10px;
+    border: 0px;
+    background: transparent;
+    transition: all 25ms ease-out;
+    cursor: pointer;
+      }
+  
+    .burger:before, .burger:after {
+    content: '';
+    width: 25px;
+    height: 1px;
+    position: absolute;
+    background: #212222;
+    transition: all 250ms ease-out;
+    will-change: transform;
+     }
+  
+    .burger:before {
+    transform: translateY(-4px);
+      }
+  
+     .burger:after {
+    transform: translateY(4px);
+      }
+  
+ 
+  
+     .active.burger:before {
+    transform: translateY(0) rotate(45deg);
+     }
+  
+     .active.burger:after {
+    transform: translateY(0) rotate(-45deg);
+      } 
+  
+/* TSHIRT CONTENT MOBILE */
+  .tshirt h2{
+    font-size: 15vw;
+
+     }
+  
+    .tshirt{
+    
+    margin-top: 100px;  
+     }
+    .tshirt-img {
+    height: 200px;
+    margin-top: 20px;
+    position: relative;
+    z-index: -3;
+    right: -150px;
+    transform: scaleX(1) scale(0.8) rotate(5deg);
+     }
+     .tshirt-black {
+        height: 200px;
+        margin-top: 10px;
+        position: relative;
+        z-index: -3;
+        right: 26px;
+        transform: scaleX(1) scale(0.8) rotate(5deg);
+         }
+
+/* BOTTLE CONTENT MOBILE */
+
+
+.bottle h2{
+    font-size: 15vw;
+}
+.bottle-img{
+    height: 200px;
+    margin-top: -10px;
+    position: relative;
+    z-index: -3;
+    right: -100px;
+    transform: scaleX(1) scale(0.8);
+}
+
+.bottle-black{
+    height: 200px;
+    margin-top: -10px;
+    position: relative;
+    z-index: -3;
+    right: 100px;
+    transform: scaleX(1) scale(0.8);
+}
+
+
+}
+
+
+
+/* TEXT PROPERTIES */
+p{
+    font-size: 3vh;
+    color: #212222;
+    font-family: 'DM Sans', sans-serif;
+}
+
+h2{
+    font-size: 15vh;
+    color: #212222;
+    font-family: 'DM Sans', sans-serif;
+}
+/* TSHIRT PROPERTIES */
+.tshirt{
+    
+    margin-top: 200px;
+   
+    margin-left: 5%;
+}
+.tshirt img{
+    height: 300px;
+    margin-top: -300px;
+    position: relative;
+    z-index: -3;
+    margin-left: 164px;
+    transform: scaleX(-1) scale(1.3) rotate(-10deg);
+}
+.tshirt hr{
+    width: 60vw;
+    outline: none;
+}
+
+.tshirt p{
+    font-size: 20px;
+}
+
+/* BOTTLE PROPERTIES */
+.bottle{
+display:inline-block;
+    margin-left: 50%;
+    margin-top: 100px;
+    
+}
+.bottle .p{
+    width: 40vw;
+    font-size: 20px;
+}
+.bottle img{
+    height: 300px;
+    
+    margin-top: -250px;
+    position: relative;
+  z-index: -3;
+    margin-left: 315px;
+    transform: scale(1.3) ;
+}
+/* LINE HR */
+.hrr{
+    width: 40vw;
+    outline: none;
+}
+
+
+
+
+
+/* FOOTER*/
+footer{
+   position: relative;
+    text-align: justify;
+    padding-top: 100px;
+    background-color: #212222;
+    margin-top: 200px;
+    
+}
+.footer p{
+    color: rgb(185, 185, 185);
+}
+.footer .grupo1{
+width: 100%;
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+padding: 45px 0px;
+}
+
+/* MOBILE CONTENT FOOTER AND BOTTLE */
+
+@media screen and (max-width:700px){
+  
+
+    
+    .footer .grupo1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 100px;
+    }
+    .contact {
+        order: 4;
+    }
+     .love{
+        order: 1;
+    }
+    .bottle{
+        margin-top: 100px;
+         display:inline-block;
+         margin-left: 20px;
+     }
+     .bottle .bottle-img{
+         display: flex;
+         margin-left: -200px;
+     }
+     .tshirt .tshirt-img{
+         display: flex;
+         margin-left: -200px;
+     }
+   
+    
+}
+
+/* COLOR BUTTON */
+
+.color{
+    padding: 10px;
+   
+}
+.black {
+    position: relative;
+    background-color:#212222;
+    border: none;
+  
+    padding: 7px 10px;
+    width: 50px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  
+  .black:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .black:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  .pink {
+    position: relative;
+    background-color:#FB088C;
+    border: none;
+  
+    padding: 7px 10px;
+    width: 50px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .pink:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  .pink:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+.tshirt-black{
+    display: none;
+}
+.bottle-black{
+    display: none;
+}
